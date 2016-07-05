@@ -1,24 +1,8 @@
-# Wie ISIS Twitter verwendet
-## Analysen wie ISIS Fanboys Twitter seit dem Anschlag von Paris nutzen
+# inspect
+Hier findet sich der KNIME Workflow für die ersten Datenanalysen.
 
-Die Daten stammen vom User "Khuram", die er auf [www.kaggle.com] (https://www.kaggle.com/kzaman/how-isis-uses-twitter) zur Verfügung gestellt hat.
-Auf diesem ISIS Branche auf GitHub werden die Analysen eingestellt, die mittels [KNIME] (https://www.knime.com) erstellt werden.
-KNIME wird als Alternative zu R, Python oder anderen möglichen Script-Sprachen verwendet.
+# network
+Hier ist ein KNIME Workflow abgelegt, mit dem Netzwerkanalysen durchgeführt werden. 
 
-## Daten
-Der "File Reader" Knoten setzt voraus, dass die Daten im KNIME Workspace unter Kaggle-Daten/ISIS/how-isis-uses-twitter/tweets.csv zur Verfügung stehen. Bei Anpassung des Pfades
-sind folgende Einstellungen des Knotens erforderlich:
-* 'check' read column headers
-* Column delimiter: ','
-* Single line comment: ''
-* 'check' ignore spaces and tabs
-* Advanced ...
-..* currently set quotes '"'
-..* 'check' Quoted strings can extend over multiple lines
-
-## langID
-Für die Identifizierung der Sprache innerhalb eines Tweets wird [langid.py] (https://github.com/saffsd/langid.py) verwendet. Mit
-```
-sudo pip install langid
-```
-kann das Tool installiert werden.
+# BIRT Report
+Neben dem KNIME Workflow wird jeweils auch ein BIRT-Report abgelegt. In ihm finden sich die dynamischen Inhalte zur Erstellung der zugehörigen PDF - Datei.
